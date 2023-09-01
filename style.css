@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change the font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #87CEEB, #ADD8E6);
+}
+
+.center-container {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+h1 {
+    font-size: 24px; /* Increase the heading font size */
+}
+
+div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px; /* Increase the input field padding */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px; /* Increase the button padding */
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ol {
+    list-style: none;
+    counter-reset: task-counter;
+    padding: 0;
+}
+
+li {
+    padding: 10px; /* Increase the list item padding */
+    cursor: pointer;
+    counter-increment: task-counter;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+li::before {
+    content: counter(task-counter) '. ';
+    font-weight: bold; /* Make the task number bold */
+    color: #4CAF50; /* Change the color of the task number */
+    margin-right: 5px; /* Add spacing between the number and task text */
+}
+
+.remove {
+    background-color: #f44336; /* Change the "Remove" button background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Add spacing between the "Remove" button and task text */
+    padding: 5px 10px; /* Adjust the "Remove" button padding */
+}
